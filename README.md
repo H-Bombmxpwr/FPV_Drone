@@ -24,16 +24,7 @@ The FPV Drone project aims to create a robust and user-friendly drone capable of
 - Instructions on how to operate the FPV drone.
 - Tips on flying in different conditions and troubleshooting common issues.
 
-#
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
-## Acknowledgments
-
-- Thank you to the ECE 445 staff and instructors for their guidance.
-- Special thanks to anyone whose code was used as inspiration or directly included in this project.
 
 
 Project Link: [https://github.com/H-Bombmxpwr/FPV_Drone](https://github.com/H-Bombmxpwr/FPV_Drone)
