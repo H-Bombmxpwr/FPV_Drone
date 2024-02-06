@@ -1,0 +1,65 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE specific files #
+######################
+# Visual Studio Code
+.vscode/
+# IntelliJ
+.idea/
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Node modules #
+################
+node_modules/
+
+# Python #
+##########
+*.pyc
+__pycache__/
+
+# Other common directories not to be committed #
+################################################
+bin/
+obj/
+out/
+build/
+target/
