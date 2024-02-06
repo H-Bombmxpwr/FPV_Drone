@@ -18,10 +18,6 @@ The FPV Drone project aims to create a robust and user-friendly drone capable of
 
 - List of tools, software, and hardware required to build and operate the drone.
 
-### Installation
-
-- Step-by-step guide on assembling the drone.
-- Instructions on setting up the software environment.
 
 ## Usage
 
