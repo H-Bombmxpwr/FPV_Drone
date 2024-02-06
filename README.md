@@ -25,7 +25,5 @@ The FPV Drone project aims to create a robust and user-friendly drone capable of
 - Tips on flying in different conditions and troubleshooting common issues.
 
 
-
-
 Project Link: [https://github.com/H-Bombmxpwr/FPV_Drone](https://github.com/H-Bombmxpwr/FPV_Drone)
 
