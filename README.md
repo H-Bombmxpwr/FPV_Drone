@@ -8,7 +8,7 @@ The FPV Drone project aims to create a robust and user-friendly drone capable of
 
 
 ## Installation
-See the [installation instructions](docs/installation/install.md) for CrazyFlie in the github docs folder.
+See the [installation instructions](install.md) for CrazyFlie in the github docs folder.
 
 
 
