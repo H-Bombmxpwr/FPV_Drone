@@ -32,4 +32,3 @@ See the [installation instructions](docs/installation/install.md) for CrazyFlie 
 
 
 Project Link: [https://github.com/H-Bombmxpwr/FPV_Drone](https://github.com/H-Bombmxpwr/FPV_Drone)
-
