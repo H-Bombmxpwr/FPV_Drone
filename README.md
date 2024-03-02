@@ -6,6 +6,12 @@ This repository contains the design and implementation files for the FPV (First-
 
 The FPV Drone project aims to create a robust and user-friendly drone capable of transmitting real-time video to the user, providing an immersive flying experience. This project covers both the hardware design including the drone's frame, motors, and camera setup, and the software development for flight control and video transmission.
 
+
+## Installation
+See the [installation instructions](install.md) for CrazyFlie in the github docs folder.
+
+
+
 ## Features
 
 - Real-time FPV video streaming.
@@ -26,4 +32,3 @@ The FPV Drone project aims to create a robust and user-friendly drone capable of
 
 
 Project Link: [https://github.com/H-Bombmxpwr/FPV_Drone](https://github.com/H-Bombmxpwr/FPV_Drone)
-

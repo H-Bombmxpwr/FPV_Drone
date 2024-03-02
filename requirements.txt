@@ -1,0 +1,15 @@
+cfgv==3.4.0
+distlib==0.3.8
+filelock==3.13.1
+identify==2.5.35
+importlib_resources==6.1.2
+libusb-package==1.0.26.2
+nodeenv==1.8.0
+numpy==1.26.4
+platformdirs==4.2.0
+pre-commit==3.6.2
+pyusb==1.2.1
+PyYAML==6.0.1
+scipy==1.12.0
+virtualenv==20.25.1
+zipp==3.17.0
