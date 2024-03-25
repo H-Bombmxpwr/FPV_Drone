@@ -1,0 +1,22 @@
+(module ESP32-CAM-SMD (layer F.Cu) (tedit 6601E0E9)
+  (descr "ESP32-CAM module with SMD pads")
+  (fp_text reference "REF**" (at 0 0) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "ESP32-CAM" (at 0 0) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  ;; Define SMD pads
+  (pad 1 smd rect (at -11.43 -7.62) (size 1.524 1.524) (layers F.Cu F.Paste F.Mask))
+  (pad 2 smd oval (at -11.43 -5.08) (size 3.048 1.524) (layers F.Cu F.Paste F.Mask))
+  ;; ... Repeat for pads 3 through 16 ...
+
+  ;; Define Silkscreen
+  (fp_line (start -13.97 -26.035) (end -13.97 13.97) (layer F.SilkS) (width 0.127))
+  ;; ... Repeat for other lines of the silkscreen ...
+
+  (fp_circle (center 0.0 5.08) (end 4.01609 5.08) (layer F.SilkS) (width 0.127))
+  (fp_text user "ESP32-CAM" (at 6.35 -22.86) (layer F.SilkS)
+    (effects (font (size 1.4 1.4) (thickness 0.15)))
+  )
+)
