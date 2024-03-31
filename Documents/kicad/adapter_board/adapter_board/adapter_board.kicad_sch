@@ -3512,7 +3512,7 @@
 		)
 		(uuid "bf04cf24-c3b0-476b-8f5a-f7a1c837606b")
 	)
-	(label "Vcom"
+	(label "VCOM"
 		(at 129.54 43.18 0)
 		(fields_autoplaced yes)
 		(effects
