@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "csv_conn")(type "KiCad")(uri "${KIPRJMOD}/local_symbols.kicad_sym/PJRAN1X1U04X.kicad_sym")(options "")(descr ""))
+)
