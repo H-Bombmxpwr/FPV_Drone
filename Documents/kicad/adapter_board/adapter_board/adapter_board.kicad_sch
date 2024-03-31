@@ -2308,6 +2308,26 @@
 			)
 		)
 	)
+	(wire
+		(pts
+			(xy 64.77 127) (xy 72.39 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "08a6ed5a-55d1-4277-8830-f4b02a5ed22a")
+	)
+	(wire
+		(pts
+			(xy 17.78 128.27) (xy 22.86 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17688f53-bee7-47ba-a474-641670e2d43e")
+	)
 	(bus
 		(pts
 			(xy 12.7 149.86) (xy 12.7 152.4)
@@ -2378,6 +2398,16 @@
 		)
 		(uuid "c2de81ae-38b8-4c27-80cb-6012eccf25c0")
 	)
+	(wire
+		(pts
+			(xy 22.86 50.8) (xy 26.67 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcfe21fd-036b-4028-a0d9-33cdd63793c4")
+	)
 	(text "Voltage Step Down"
 		(exclude_from_sim no)
 		(at 152.654 18.796 0)
@@ -2409,7 +2439,29 @@
 		)
 		(uuid "e2f3c453-9f67-4b89-bf72-a57c166285c9")
 	)
-	(label "3.3 V Connect"
+	(label "VCOM"
+		(at 64.77 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5f87bc40-964b-4d16-8ca0-4e65ee087c96")
+	)
+	(label "GND"
+		(at 17.78 128.27 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "625e5382-f474-47af-a88b-a15063485bb2")
+	)
+	(label "3v3"
 		(at 59.69 54.61 0)
 		(fields_autoplaced yes)
 		(effects
@@ -2419,6 +2471,17 @@
 			(justify left bottom)
 		)
 		(uuid "b5abf13b-a8fd-4ec3-bed3-91fc2ab446fa")
+	)
+	(label "GND"
+		(at 22.86 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bf04cf24-c3b0-476b-8f5a-f7a1c837606b")
 	)
 	(symbol
 		(lib_id "2024-03-30_19-44-20:NPPN101BFLC-RC")
@@ -2439,7 +2502,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NPPN101BFLC-RC"
+		(property "Value" "Crazyflie Right"
 			(at 86.36 119.3799 0)
 			(effects
 				(font
@@ -2535,7 +2598,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NPTC081KFXC-RC"
+		(property "Value" "ESP Cam Left"
 			(at 40.64 45.7199 0)
 			(effects
 				(font
@@ -2625,7 +2688,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NPPN101BFLC-RC"
+		(property "Value" "Crazyflie Left"
 			(at 36.83 118.1099 0)
 			(effects
 				(font
@@ -2721,7 +2784,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NPTC081KFXC-RC"
+		(property "Value" "ESP Cam Right"
 			(at 86.36 46.9899 0)
 			(effects
 				(font
