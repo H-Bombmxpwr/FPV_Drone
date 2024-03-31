@@ -2408,6 +2408,16 @@
 		)
 		(uuid "dcfe21fd-036b-4028-a0d9-33cdd63793c4")
 	)
+	(text "Adapter Board"
+		(exclude_from_sim no)
+		(at 195.58 189.484 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3d8b4ed5-bf88-48a8-bc0b-af43c53461fb")
+	)
 	(text "Voltage Step Down"
 		(exclude_from_sim no)
 		(at 152.654 18.796 0)
