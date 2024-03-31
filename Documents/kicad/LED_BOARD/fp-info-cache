@@ -1,4 +1,4 @@
-23157383361298907
+23150536513682446
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -94744,24 +94744,3 @@ Varistor VF
 0
 2
 2
-adapter_board
-adapter_mod_bottom
-Custom female SMD connector, 10 pins, 2mm pitch
-SMD connector female 10-pin
-0
-10
-10
-footprints_crazyflie_connector
-CONN10X1_NPPN101BFLC-RC_SUL
-
-NPPN101BFLC-RC 
-0
-10
-10
-footprints_espcam_connector
-CONN_NPTC081KFXC-RC_SUL
-
-NPTC081KFXC-RC 
-0
-8
-8
