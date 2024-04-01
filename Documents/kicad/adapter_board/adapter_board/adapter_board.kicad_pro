@@ -481,7 +481,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "group64_adapterboard_gerber/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
