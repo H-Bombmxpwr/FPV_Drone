@@ -3554,8 +3554,8 @@
 		(layer "Edge.Cuts")
 		(uuid "dcd50f7e-1530-444b-a733-9ad8cbe173c4")
 	)
-	(gr_text "ECE445 SP24 \nAdapter Board\nHunter Baisden Team 64"
-		(at 172.38 73.42 0)
+	(gr_text "ECE445 SP24 \nAdapter Board\nTeam 64\nHunter Baisden"
+		(at 165.3925 75.96 0)
 		(layer "B.SilkS")
 		(uuid "4c08f2a7-4a64-4a02-bf7b-489930353039")
 		(effects
@@ -3563,11 +3563,11 @@
 				(size 1 1)
 				(thickness 0.15)
 			)
-			(justify left bottom mirror)
+			(justify bottom mirror)
 		)
 	)
 	(gr_text "ESP32 Cam Front"
-		(at 156.37 64.51 90)
+		(at 155.04 64.32 90)
 		(layer "B.SilkS")
 		(uuid "6a679743-7dcb-4b76-84f1-52ce00bae0b5")
 		(effects
@@ -3603,7 +3603,7 @@
 		)
 	)
 	(gr_text "Crazyflie Antenna"
-		(at 156.19 77.36 90)
+		(at 155.04 77.46 90)
 		(layer "F.SilkS")
 		(uuid "8a15c79f-8899-41ef-802b-d0ff26552198")
 		(effects
