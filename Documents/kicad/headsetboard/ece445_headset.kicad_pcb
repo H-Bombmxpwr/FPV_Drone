@@ -45,7 +45,7 @@
 			(layerselection 0x00010fc_ffffffff)
 			(plot_on_all_layers_selection 0x0000000_00000000)
 			(disableapertmacros no)
-			(usegerberextensions no)
+			(usegerberextensions yes)
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
 			(creategerberjobfile yes)
@@ -74,9 +74,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "group64_headset_gerber/")
 		)
 	)
 	(net 0 "")
@@ -348,7 +348,7 @@
 		(descr "Terminal Block Phoenix MKDS-1,5-2-5.08, 2 pins, pitch 5.08mm, size 10.2x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix")
 		(tags "THT Terminal Block Phoenix MKDS-1,5-2-5.08 pitch 5.08mm size 10.2x9.8mm^2 drill 1.3mm pad 2.6mm")
 		(property "Reference" "J3"
-			(at -1.455 -6.26 360)
+			(at -1.455 -6.26 0)
 			(layer "F.SilkS")
 			(uuid "21848ab6-63fe-4a39-b38d-4711d75f4bdd")
 			(effects
@@ -359,7 +359,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 2.54 5.66 360)
+			(at 2.54 5.66 0)
 			(layer "F.Fab")
 			(uuid "3907357b-01fb-4bcc-99b8-cb4d58d536bf")
 			(effects
@@ -789,7 +789,7 @@
 			(uuid "aa2f079e-82b5-4919-816e-2585f207236f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.54 3.2 360)
+			(at 2.54 3.2 0)
 			(layer "F.Fab")
 			(uuid "3b57241d-410d-402a-9582-cac5282c2453")
 			(effects
@@ -1470,7 +1470,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R1"
-			(at -2.5 0 270)
+			(at -2.5 0 -90)
 			(layer "F.SilkS")
 			(uuid "1b3bf72d-8341-435b-9d2f-207055c15e0d")
 			(effects
@@ -1693,7 +1693,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R4"
-			(at -2.5875 0 270)
+			(at -2.5875 0 -90)
 			(layer "F.SilkS")
 			(uuid "aaf93383-75c7-407c-a5c6-0bfc5272b91b")
 			(effects
@@ -1914,7 +1914,7 @@
 			)
 		)
 		(property "Value" "33u"
-			(at 0 1.68 270)
+			(at 0 1.68 -90)
 			(layer "F.Fab")
 			(uuid "f9290df1-5ec0-4f0d-940f-ce0eb4e606f8")
 			(effects
@@ -2066,7 +2066,7 @@
 			(uuid "e585ff8d-c75a-41c4-af0a-1dff87f672ec")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(uuid "87673c6e-a365-40ae-a09c-5960ce0b276f")
 			(effects
@@ -2489,7 +2489,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 0 1.65 360)
+			(at 0 1.65 0)
 			(layer "F.Fab")
 			(uuid "f2cc2044-d73b-4a78-b3b8-23ee8c64cd5b")
 			(effects
@@ -2654,7 +2654,7 @@
 			(uuid "92b85c9a-c5c7-47f7-a668-a231bd3efeb3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "ffb9d927-052a-49d3-a162-3393adc7c7ab")
 			(effects
@@ -3294,7 +3294,7 @@
 			(uuid "8ec22bf3-1a7b-4b3b-9728-bcaa36017648")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.27 5.08 270)
+			(at 1.27 5.08 -90)
 			(layer "F.Fab")
 			(uuid "b4084bca-5335-4d77-8608-5f0f3b5fc818")
 			(effects
@@ -3633,7 +3633,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP1"
-			(at 0 -2 270)
+			(at 0 -2 -90)
 			(layer "F.SilkS")
 			(uuid "dd9d4ca0-b769-40de-83b9-398b4b12601a")
 			(effects
@@ -3644,7 +3644,7 @@
 			)
 		)
 		(property "Value" "SolderJumper_2_Open"
-			(at 94.09 -0.85 270)
+			(at 94.09 -0.85 -90)
 			(layer "F.Fab")
 			(uuid "b5c4cfe8-0eac-4930-9bb2-a236131dea43")
 			(effects
@@ -6683,7 +6683,7 @@
 			)
 		)
 		(property "Value" "33u"
-			(at 0 1.68 270)
+			(at 0 1.68 -90)
 			(layer "F.Fab")
 			(uuid "4d23427d-2d57-4ab5-b0c1-b275a5856a3e")
 			(effects
@@ -6835,7 +6835,7 @@
 			(uuid "50b74321-c167-4cae-903f-363ef030351e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 270)
+			(at 0 0 -90)
 			(layer "F.Fab")
 			(uuid "bc9d85ea-3c40-4c56-81e3-a71305026525")
 			(effects
@@ -7179,7 +7179,7 @@
 			)
 		)
 		(property "Value" "SS8050-G"
-			(at 0 2.4 360)
+			(at 0 2.4 0)
 			(layer "F.Fab")
 			(uuid "78187d69-3a0a-4675-819f-5ef38f8715f7")
 			(effects
@@ -7372,7 +7372,7 @@
 			(uuid "84ca5973-d495-43cf-a9de-7aac0d00b4f6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "22d6f868-27d2-432a-9f7c-86b76e05eb1d")
 			(effects
@@ -7652,7 +7652,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Female"
-			(at 0 12.49 270)
+			(at 0 12.49 -90)
 			(layer "F.Fab")
 			(uuid "620ddd36-9c40-4498-a958-052a8f967e14")
 			(effects
@@ -7854,7 +7854,7 @@
 			(uuid "5fe9c549-e470-46e6-91b3-f6fb5cc3e854")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 5.08 360)
+			(at 0 5.08 0)
 			(layer "F.Fab")
 			(uuid "6ddab4ee-8383-4793-b781-49ae1fb1a6e1")
 			(effects
@@ -8048,7 +8048,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R5"
-			(at 2.5 0 270)
+			(at 2.5 0 -90)
 			(layer "F.SilkS")
 			(uuid "d7d7c3d5-fd88-431d-9ec0-ee33a4e71195")
 			(effects
@@ -8269,7 +8269,7 @@
 			)
 		)
 		(property "Value" "SS8050-G"
-			(at 0 2.4 360)
+			(at 0 2.4 0)
 			(layer "F.Fab")
 			(uuid "e585b84e-9351-4cee-b6ee-041480ab7688")
 			(effects
@@ -8462,7 +8462,7 @@
 			(uuid "9671fd58-2b70-4bf9-9d33-75113c080cb9")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "68f66934-8a45-4f3e-9d49-a4d53f33c086")
 			(effects
@@ -12600,11 +12600,11 @@
 				(xy 90.412408 85.624827) (xy 90.451994 85.664413) (xy 90.451996 85.664414) (xy 90.554756 85.733076)
 				(xy 90.554758 85.733077) (xy 90.554767 85.733083) (xy 90.579772 85.74344) (xy 90.602071 85.752677)
 				(xy 90.636213 85.766819) (xy 90.668966 85.780386) (xy 90.768137 85.800112) (xy 90.790192 85.804499)
-				(xy 90.790196 85.8045) (xy 90.790197 85.8045) (xy 90.913804 85.8045) (xy 94.833678 85.8045) (xy 94.900717 85.824185)
-				(xy 94.946472 85.876989) (xy 94.956898 85.914617) (xy 94.96463 85.983249) (xy 95.02421 86.153521)
-				(xy 95.024211 86.153522) (xy 95.120184 86.306262) (xy 95.247738 86.433816) (xy 95.326814 86.483503)
-				(xy 95.395671 86.526769) (xy 95.400478 86.529789) (xy 95.52712 86.574103) (xy 95.570745 86.589368)
-				(xy 95.57075 86.589369) (xy 95.749996 86.609565) (xy 95.75 86.609565) (xy 95.750004 86.609565) (xy 95.929249 86.589369)
+				(xy 90.790196 85.8045) (xy 90.790197 85.8045) (xy 94.833678 85.8045) (xy 94.900717 85.824185) (xy 94.946472 85.876989)
+				(xy 94.956898 85.914617) (xy 94.96463 85.983249) (xy 95.02421 86.153521) (xy 95.024211 86.153522)
+				(xy 95.120184 86.306262) (xy 95.247738 86.433816) (xy 95.326814 86.483503) (xy 95.395671 86.526769)
+				(xy 95.400478 86.529789) (xy 95.52712 86.574103) (xy 95.570745 86.589368) (xy 95.57075 86.589369)
+				(xy 95.749996 86.609565) (xy 95.75 86.609565) (xy 95.750004 86.609565) (xy 95.929249 86.589369)
 				(xy 95.929252 86.589368) (xy 95.929255 86.589368) (xy 96.099522 86.529789) (xy 96.099523 86.529787)
 				(xy 96.099529 86.529786) (xy 96.105795 86.526769) (xy 96.106701 86.52865) (xy 96.162762 86.5125)
 				(xy 109.886554 86.5125) (xy 109.886574 86.512501) (xy 109.892688 86.512501) (xy 110.041314 86.512501)
@@ -13511,7 +13511,7 @@
 				(xy 76.605 86.369019) (xy 76.605 86.240981) (xy 76.580021 86.115402) (xy 76.555001 86.055) (xy 77.755 86.055)
 				(xy 77.755 84.957172) (xy 77.754999 84.957155) (xy 77.747769 84.889913) (xy 77.749201 84.889758)
 				(xy 77.752488 84.82848) (xy 77.793356 84.77181) (xy 77.858375 84.74623) (xy 77.893612 84.748119)
-				(xy 77.925688 84.7545) (xy 78.074312 84.7545) (xy 79.742973 84.7545) (xy 79.810012 84.774185) (xy 79.855767 84.826989)
+				(xy 77.925688 84.7545) (xy 79.742973 84.7545) (xy 79.810012 84.774185) (xy 79.855767 84.826989)
 				(xy 79.865711 84.896147) (xy 79.836686 84.959703) (xy 79.827314 84.969399) (xy 79.711442 85.07691)
 				(xy 79.543185 85.287898) (xy 79.408258 85.521599) (xy 79.408256 85.521603) (xy 79.309666 85.772804)
 				(xy 79.309664 85.772811) (xy 79.249616 86.035898) (xy 79.229451 86.304995) (xy 79.229451 86.305004)
