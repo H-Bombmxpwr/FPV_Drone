@@ -15,12 +15,21 @@ pip install -e .
 
 To test the installation, run `cfclient` in the terminal to scan for and connect to the drone.
 
+If the Crazyradio connection fails with packets lost error when moving drone around:
+
+Check you are using the correct firmware. For Crazyradio PA, ensure you are using a PA-specific firmware version. This covered in detial below. if it works, congrats you don't have to deal with firmware
+
 ## Firmware Build Instructions
 
 Navigate to the firmware directory after cloning the repository and select the appropriate `make` command based on your Crazyradio version.
 
+Clone the repo:
+```bash
+git clone https://github.com/bitcraze/crazyflie-firmware.git
+```
+
 ### Install Build Tools Using Homebrew
-Install SDCC and Binutils:
+Install SDCC and Binutils on your mac:
 
 ```bash
 brew install sdcc
@@ -57,9 +66,16 @@ After successful flashing, unplug and replug the Crazyradio. Refer to the [Crazy
 If you encounter issues during the build or flashing process, follow these steps to troubleshoot.
 
 ### If You Encounter a `binutils` Error During Build
-If the build process fails due to a `binutils` error:
+If the build process fails due to a `binutils` error,
+specifically:
 
-Download the `binutils-2.42` source from [GNU Binutils](https://ftp.gnu.org/gnu/binutils/binutils-2.42.tar.xz) and compile it manually.
+```bash
+objcopy -I ihex bin/cradio.ihx -O binary bin/cradio.bin
+make: objcopy: No such file or directory
+make: *** [cradio.bin] Error 1
+```
+
+Download the `binutils-2.42` source from [GNU Binutils](https://ftp.gnu.org/gnu/binutils/binutils-2.42.tar.xz) and compile it manually in the terminal.
 
 ```bash
 tar -xvf binutils-2.42.tar.xz
@@ -67,6 +83,14 @@ cd binutils-2.42
 ./configure
 make
 ```
+
+Manually use `objcopy` from the compiled `binutils`:
+
+```bash
+/Users/yourusername/Downloads/binutils-2.42/binutils/objcopy -I ihex bin/cradio.ihx -O binary bin/cradio.bin
+```
+
+Afterward, run `make CRPA=1` to build for Crazyradio PA or `make CRPA=0` for Crazyradio.
 
 ### If You Experience the `NoBackendError` When Flashing Firmware
 
@@ -97,23 +121,3 @@ sudo ln -s /opt/homebrew/lib/libusb-1.0.dylib /usr/local/lib/libusb-1.0.dylib
 ```
 
 Run the firmware flashing commands again.
-
-### Manual Execution of `objcopy`
-
-If `objcopy` is missing or not found:
-
-Compile `binutils` manually as detailed above, then use the `objcopy` from the compiled directory:
-
-```bash
-/Users/yourusername/Downloads/binutils-<version>/binutils/objcopy -I ihex bin/cradio.ihx -O binary bin/cradio.bin
-```
-
-And run `make` again for your Crazyradio version.
-
-### Packets Lost Error
-
-If the Crazyradio connection fails with packets lost error:
-
-Check you are using the correct firmware. For Crazyradio PA, ensure you are using a PA-specific firmware version. Download the appropriate firmware from the [GitHub release page](https://github.com/bitcraze/crazyradio-firmware/releases).
-
-For further assistance and more detailed troubleshooting, consult the community forums or the GitHub issues page for the Crazyflie projects.
