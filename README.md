@@ -27,7 +27,7 @@ The FPV Drone project aims to create a robust and user-friendly drone capable of
 If you are looking to control the drone with your computer you will need:
 - Crazyflie 2.0 Drone
 - Crazyradio or Crazyflie PA
-- Xbox Controller
+- Gaming Controller Controller
 
 Then follow the list of steps in [install.md](install.md). 
 
