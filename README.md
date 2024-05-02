@@ -31,6 +31,13 @@ If you are looking to control the drone with your computer you will need:
 
 Then follow the list of steps in [install.md](install.md). 
 
+## The Project
+
+It can be found at this [link](https://courses.engr.illinois.edu/ece445/projects.asp) under "Spring 2024". We were team 64. To save time some material is also linked below:
+
+- [Design Document](Documents\documentation\Design_Document_ECE_445.pdf)
+- [Video](https://youtu.be/XnW3fZcY0gs)
+- [Final Paper](Documents\documentation\ECE_445_Final_Paper_ECE445.pdf)
 
 ## Acknowledgments
 
