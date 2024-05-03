@@ -1,3 +1,7 @@
+When looking at the buck converter on Jason's example board, saw that the input voltage range did not include 3.7V. Instead of trying to find a buck converter with a low dropout, followed https://www.reddit.com/r/AskElectronics/comments/6d5bcy/33v_regulation_from_a_37v_liion_battery/ to determine that we should move forawrd with a AP2112 LDO.
+
+Redesigned the power circuits on the headset board. LDO was simpler than the buck converter. Also determined that the reverse power protection circuit and the fuse are unnecessary since the ESP32 will not draw more than 600mA of current and the Crazyflie battery connector that I will be using for the connector instead of the skrew connector is not reversible.
+
 Followed https://randomnerdtutorials.com/esp32-cam-access-point-ap-web-server/ as a basic program to test WiFi capabilities of the ESP32-CAM board.
 Was successful.
 
@@ -12,6 +16,4 @@ Hunter found https://github.com/espressif/vscode-esp-idf-extension/blob/master/d
 
 Determined that the best chip to go forward with is the ESP32 Wrover. Looking at the datasheet (https://www.espressif.com/sites/default/files/documentation/esp32-wrover-e_esp32-wrover-ie_datasheet_en.pdf), the GPIO_STRAPPING pins are a bit different, but the general peripheries are the same.
 
-When looking at the buck converter on Jason's example board, saw that the input voltage range did not include 3.7V. Instead of trying to find a buck converter with a low dropout, followed https://www.reddit.com/r/AskElectronics/comments/6d5bcy/33v_regulation_from_a_37v_liion_battery/ to determine that we should move forawrd with a AP2112 LDO.
-
-Redesigned the power circuits on the headset board. LDO was simpler than the buck converter. Also determined that the reverse power protection circuit and the fuse are unnecessary since the ESP32 will not draw more than 600mA of current and the Crazyflie battery connector that I will be using for the connector instead of the skrew connector is not reversible.
+After the new dev kit was ordered with the correct chip (and thus a DAC), got the demo library running. Used the HDMI converter to view the output on a monitor in 2070.
