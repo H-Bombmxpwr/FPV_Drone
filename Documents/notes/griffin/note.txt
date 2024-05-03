@@ -1,0 +1,189 @@
+2/6/2024
+First Meeting with TA
+Outcome:
+	We would probably have to create out own radio driver circuit
+	IF a board exists that does something we dont need to make it
+	Overall our project sounds good
+2/7/2024
+Objective: first main meeting, go over plans
+Notes:
+	2 boards, 1 on headset one on drone
+	One on drone takes lightwight camera signal (https://www.amazon.com/Readytosky-Camera-1000TVL-Switchable-Quadcopter/dp/B07C9MVV9B/ref=asc_df_B07C9MVV9B/?tag=hyprod-20&linkCode=df0&hvadid=693389209895&hvpos=&hvnetw=g&hvrand=16690768769151422481&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9022185&hvtargid=pla-979917058773&psc=1&mcid=5979a648d3663477939c685e634154d6&gad_source=1&gclid=CjwKCAjw88yxBhBWEiwA7cm6pV_Tgy0uwV9IERtCiZiNghxpjWnhBA-NHhJVOx8xVne1ikjiVmtXjxoCd2wQAvD_BwE)
+	Translates to signal to be transmitted by radio driver
+	Headset board takes radio signal and creates HDMI output for headset
+	HEadset board also drives LEDs
+2/9/2024
+Objective: Meeting with John Hart
+Notes
+	Vicon tracks infrared
+	Programmable light array
+	Track in drone arena
+	Main project: make FPV drone
+	Lightweight Crazyflie drone
+	small camera
+	FPV headset
+2/13/2024
+Second Meeting with TA
+NotesL
+	Idea sounds good
+	Might not actually have to make radio driver from scratch like we thought
+	Might be better idea to use ESP32s
+2/17/2024
+Objective: Figure out ESP32 wifi and what are plans are
+Notes:
+	This chip looks good (https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf)
+	Can transmit at 11 Mbps, should be enough for basic video streaming
+	This camera looks better (https://www.amazon.com/Caddx-Camera-1200TVL-Global-Aspect/dp/B088TDTL1M/ref=asc_df_B088TDTL1M/?tag=hyprod-20&linkCode=df0&hvadid=693507718463&hvpos=&hvnetw=g&hvrand=15516276528404537276&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9022185&hvtargid=pla-1623817107085&psc=1&mcid=e3031e7e40163cdfaa157d280ec9d6cd&gad_source=1&gclid=CjwKCAjw88yxBhBWEiwA7cm6pRzYenXu-OBiFW5bV-7LvnH69FqI0qNBb9d_v_zgfCuDr1PEd9CzSRoCC64QAvD_BwE)
+	Smaller, lighter, and uses NTSC
+	ESP32 too slow for HDMI, we should use composite video
+2/18/2024
+Meet to work on design document
+	Found correct LEDs that are at correct frequency for vicon
+2/19/2024
+Meet to work on design document
+	Wrote power system requirements
+2/20/2024
+Meet to work on design document
+	Crazyflie battery: 350mAh at 3.7V,  5.25A.
+	consumes 100mA while stationary and 7W when flying unburdened at 27 grams(https://forum.bitcraze.io/viewtopic.php?t=711#:~:text=Re%3A%20Crazyflie%20current%20draw&text=When%20the%20Crazyflie%20hovers%20it,during%20bursts%20up%20to%204A.)
+	camera weighs 2.5 grams, add 10g for everything else
+	7W/(27g)^2=.0096
+	27g+2.5g+10g=39.5g
+	15W/3.7V=4.05A
+
+	Camera uses 120ma
+	other boards 200ma
+	4.57A
+	1260As in battery means battery life of 275 seconds
+2/29/2024
+Prupose: Post design review meeting
+Notes:
+	Move forward with PCB design
+	Ill take LED board
+	Hunter Takes Drone board
+	Eli takes Headset
+	Drone board literally just has to drive 4 leds to have one at a time illuminated via switch
+	Just need flip flops or something
+3/4/2024
+Missed PCB deadline
+We'll order after spring break
+I think im good though, I just need to JK flip flops and a demultiplexer
+	Something simple like this https://www.ti.com/product/SN54HC109-SP
+3/20/2024
+Goals: Post spring break get back in groove
+We need to finish designing the boards
+Start testing stuff on the proper dev boards when we order them
+We know which ones to order now
+3/26/2024
+Goals: Design Meeting
+Notes:
+	Changing from ESP 32 on custom board to esp32-cam
+	Something like this (https://randomnerdtutorials.com/esp32-cam-video-streaming-face-recognition-arduino-ide/)
+	Properly have LED board all planned out. Two JK flip flops into each other into a demux
+	Eli seems good with the headset board but has to do some redesigning
+4/1/2024
+Goals: PCB overview
+Notes:
+	Changed ground from normal wires connected to a ground pin to a masking layer connected to the ground pin
+	Allows for beter grounding
+	All boards ready to order
+4/5/2024
+Goals: Figure out dev boards
+Notes:
+	Figured out ESP32-cam board with arguino
+	Know how to program board now
+	(Followed this tutorial successfully https://randomnerdtutorials.com/esp32-cam-video-streaming-web-server-camera-home-assistant/)
+4/8/2024
+Goals: Meeting to figure out New PCBs
+Notes:
+	Eli had to redesign board due to wrong ESP-32 without DACs
+	THat prevents us from using composite video
+	We could use HDMI instead but we'd have to redesign the board anyway
+	May as well stick to original plan with new chip with DACs
+	I made the buttons incorrectly on the LED board, figured that out by breadboarding it
+	Just simplifying button design
+	Also make new board with switches instead
+	Remove JK flip flops
+	Now lighter and more consistent, no need to debounce
+	Button was easier to use
+	Can just use switches from lab kit
+4/10/2024
+Goals: admin meeting
+Notes:
+	Seem to be on track, a bit behind on PCB ordering
+	To ensure we get it on time we should order from third party as well for faster shipping
+	Spend rest of week writing code so out boards are ready when we need them
+4/13/2024
+Goals: coding dev boards
+Notes:
+	We should use UDP instead of TCP
+	UDP is faster but drops more packets
+	Better for streaming video
+	some of teh frames might be wrong but latency is lower
+
+	Wrote simple testing code for ESP32 cam
+	At top sets up cam
+	In setup() {
+	Initializes camera from library
+	Begins serial
+	Begins wifi
+	Opens UDP port
+	Print IP address
+	}
+
+	In loop() {
+	run camera
+	get packet size
+	Check connection with headset board
+	Read UDP packet
+	Print size of image for debugging
+	Prepare buffer in memory
+	get frame buffer from camera
+	load camera frame buffer into UDP buffer
+	print cam buffer (This can be compared to the .jpeg magic bits to ensure its getting the file correctly from the camera)
+	Print buffer to the UDP connection
+	}
+
+	And then the headset board just prints everything it receives via UDP
+	And we can do the same trick with the .jpeg magic bytes (FF D8 FF E0 00 10 4A 46 49 46 00 01)
+4/17/2024
+Goals: solder the PCBs that arrived
+Notes:
+	Green LEDs lit up when the switches were flipped
+	We ended up frying the IC on the board with loose wires (Connectors hadn't been soldered on yet)
+	Otherwise board seems to work
+	We seem prepared for the demo, the other boards work and will run the test code we wrote for the dev boards
+4/20/2024
+Goals: finalize everything for the demo
+Notes:
+	Drone doesn't fly
+	Camera runs but not well, we have to solder some jumper wires in place
+	JPEG to CSV wont work, we will just stream to the laptop
+	LEDs can be seen on a camera and filmed
+	Vicon follows drone
+4/21/2024
+Goals: Prepare for demo
+Notes:
+	Got drone to run with camera attached
+	Still no JPEG conversion code
+	CAn just use webserver on laptop and HDMI cable to share screen to get video onto headset
+4/24/2024
+Goals: Prepare Presentation
+Notes:
+	Not much tbh
+4/28/2024
+Goals: Prepare for final demonstration
+Notes:
+	Did all the verification for our parts
+	Made graphs etc
+	OUR DRONE FLIES!!!!!!!
+	Turns out our motors only got to 80%, can be boosted in software
+	Too late for light lab
+	We can do all the filming and testing tomorrow morning before presentation at 3:00
+4/29/2024
+Goals: include flight stuff
+Notes:
+	Filmed flight
+	Broke a camera (on redesign they shouldn't be attached entirely via ribbon cable lmao)
+	Changed presentation to include references to how we can flight
+	Changed successes, failures, and future optimizations to reflect we can now fly
