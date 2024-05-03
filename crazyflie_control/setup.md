@@ -17,16 +17,23 @@ To test the installation, run `cfclient` in the terminal to scan for and connect
 
 If the Crazyradio connection fails with packets lost error when moving drone around:
 
-Check you are using the correct firmware. For Crazyradio PA, ensure you are using a PA-specific firmware version. This covered in detial below. if it works, congrats you don't have to deal with firmware
+Check you are using the correct firmware. For Crazyradio PA, ensure you are using a PA-specific firmware version. This covered in detail below. if it works, congrats you don't have to deal with firmware
 
 ## Firmware Build Instructions
 
-Navigate to the firmware directory after cloning the repository and select the appropriate `make` command based on your Crazyradio version.
 
 Clone the repo:
 ```bash
 git clone https://github.com/bitcraze/crazyflie-firmware.git
 ```
+
+Navigate to the firmware directory 
+
+```bash
+cd crazyradio-firmware
+```
+
+
 
 ### Install Build Tools Using Homebrew
 Install SDCC and Binutils on your mac:
