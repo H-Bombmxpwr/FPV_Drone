@@ -25,7 +25,7 @@ In the Visual Studio Command Palette, use ESP-IDF: Select Port to Use, Set Espre
 
 # Programming the Boards
 ## ESP32-CAM
-Either use the special programming board for the ESP32-CAM or follow [this tutorial](https://randomnerdtutorials.com/program-upload-code-esp32-cam/).
+Either use the special programming board for the ESP32-CAM or follow [this tutorial](https://randomnerdtutorials.com/program-upload-code-esp32-cam/) to use a FTDI programmer.
 
 ## Headset Board
 Use a FTDI programmer. Make sure to solder a connection for RTS since this pin is usually not easily available. Connect the FTDI pins to the programming pins at the bottom of the board, swapping TX and RX (but not RTS or DTR). ![](https://github.com/H-Bombmxpwr/FPV_Drone/blob/main/Documents/images/board_pins.PNG)
