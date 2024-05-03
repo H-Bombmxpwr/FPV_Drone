@@ -1,16 +1,16 @@
 
 # FPV Drone Project - ECE 445
 
-This repository contains the design and implementation files for the FPV (First-Person View) Drone project developed by Hunter, Eli, and Griffin for the ECE 445 final project at the University of Illinois.
+This repository contains the design and implementation files for the FPV (First-Person View) Drone project developed by Hunter, Eli, and Griffin for the ECE 445 final project at the University of Illinois in the Spring of 2024.
 
 ## Project Overview
 
-The FPV Drone project aims to create a robust and user-friendly drone capable of transmitting real-time video to the user, providing an immersive flying experience. This repository includes everything that was used in one way or another to make this project. 
+The FPV Drone project aims to create a robust and user-friendly drone capable of transmitting real-time video to the user, providing an immersive flying experience. This project was proposed by John M. Hart from the center of Autonomy at the University of Illinois. This repository includes everything that was used in one way or another to make this project. 
 
 ## Directories
 
 - Code
-   - Low level arduino and c code for programming 
+   - Low level arduino and c code for flashing the microcontrollers 
 - crazyflie_control
    - Software to control the Crazyflie Drone
    - Firmware to flash the Crazyflie Done
@@ -18,7 +18,7 @@ The FPV Drone project aims to create a robust and user-friendly drone capable of
 - Documents
    - Power Points
    - Design Documents
-   - PCB Design Documents
+   - PCB schematics and gerbers
    - Images
    - Personal notes
    - Needed Documentation
