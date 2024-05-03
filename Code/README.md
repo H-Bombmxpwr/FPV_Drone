@@ -11,6 +11,9 @@ This library is used for the OV2640.h library that initalizes the camera and rea
 ## Running
 video_webserver.ino runs on the ESP32-CAM board and basic_wifi_ap.ino runs on the headset board.
 
+## Accessing the Webserver
+Use the SSID and password at the top of either program (these must match) to connect an external computer to the WiFi network. Then go to 192.168.4.2 in a browse to start the webserver and view the camera feed. If you reconfigure the ESP32-CAM board to host its own WiFi, this IP address will change to 192.168.4.1.
+
 # CSV Conversion Code
 ## Environement Setup
 Follow this [link](https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/tutorial/install.md) to setup the ESP IDF environment in Visual Studio Code.
