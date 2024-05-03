@@ -8,6 +8,9 @@ The ESP32 Board is "AI Thinker ESP32-CAM" and the Headset Board is "ESP32 Wrover
 Download the [Micro-RTSP Repo](https://github.com/geeksville/Micro-RTSP). Then use Sketch->Include Library->Add .ZIP Library to install the library into your environment.
 This library is used for the OV2640.h library that initalizes the camera and reads from the frame buffer.
 
+## Running
+video_webserver.ino runs on the ESP32-CAM board and basic_wifi_ap.ino runs on the headset board.
+
 # CSV Conversion Code
 ## Environement Setup
 Follow this [link](https://github.com/espressif/vscode-esp-idf-extension/blob/master/docs/tutorial/install.md) to setup the ESP IDF environment in Visual Studio Code.
