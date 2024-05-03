@@ -22,3 +22,10 @@ The core library is [esp32_composite_video_lib](https://github.com/aquaticus/esp
 In order to get the correct demo video, make sure that the app_main(void) function in demo.c calls run_demo_slides();.
 
 In the Visual Studio Command Palette, use ESP-IDF: Select Port to Use, Set Espressif Device Target, Build your Project, and finally Flash (UART) your Project
+
+# Programming the Boards
+## ESP32-CAM
+Either use the special programming board for the ESP32-CAM or follow [this tutorial](https://randomnerdtutorials.com/program-upload-code-esp32-cam/).
+
+## Headset Board
+Use a FTDI programmer. Make sure to solder a connection for RTS since this pin is usually not easily available.
